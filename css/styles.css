@@ -443,7 +443,7 @@ Hero
 }
 
 /* ==========<!-- הפרדת התוכן על ידי קו כזה ======== --> */
-.content-divider {
+/* .content-divider {
   height: 0.25rem;
   background: linear-gradient(
     to left,
@@ -452,7 +452,7 @@ Hero
     rgb(151, 138, 216),
     rgb(222, 74, 230)
   );
-}
+} */
 
 /*
 =====================================

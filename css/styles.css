@@ -442,6 +442,18 @@ Hero
   position: relative;
 }
 
+/* ==========<!-- הפרדת התוכן על ידי קו כזה ======== --> */
+.content-divider {
+  height: 0.25rem;
+  background: linear-gradient(
+    to left,
+    rgb(106, 217, 236),
+    rgb(105, 130, 237),
+    rgb(151, 138, 216),
+    rgb(222, 74, 230)
+  );
+}
+
 /*
 =====================================
 About

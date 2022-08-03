@@ -176,7 +176,14 @@ p {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: var(--clr-primary-5);
+  /* background: var(--clr-primary-5); */
+  background: linear-gradient(
+    to left,
+    rgb(106, 217, 236),
+    rgb(105, 130, 237),
+    rgb(151, 138, 216),
+    rgb(222, 74, 230)
+  );
   margin-left: auto;
   margin-right: auto;
 }

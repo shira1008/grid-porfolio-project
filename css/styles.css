@@ -799,7 +799,7 @@ Connect
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .video-text {
     transform: translateX(-20%);
   }

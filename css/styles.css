@@ -775,6 +775,11 @@ Connect
 
   .video-banner {
     padding-bottom: 20rem;
+    background-color: var(--clr-white);
+  }
+
+  .video-container {
+    display: none;
   }
 }
 

@@ -789,30 +789,23 @@ Connect
 
   .video-text {
     min-width: 20rem;
+    align-self: center;
+    text-align: initial;
   }
 
   .video-banner .section-title {
     min-width: 20rem;
+    align-self: center;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .video-text {
     transform: translateX(-20%);
   }
 
   .video-banner .section-title {
     transform: translateX(-20%);
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .video-text {
-    transform: translateX(-40%);
-  }
-
-  .video-banner .section-title {
-    transform: translateX(-40%);
   }
 }
 

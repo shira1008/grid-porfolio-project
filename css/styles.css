@@ -772,12 +772,12 @@ Connect
 @media screen and (max-width: 676px) {
   .connect {
     justify-content: center;
-    background-color: var(--clr-white);
+    background-color: var(--clr-grey-10);
   }
 
   .video-banner {
     padding-bottom: 20rem;
-    background-color: var(--clr-grey-10);
+    background-color: var(--clr-white);
     width: 90vw;
     margin: 0 auto;
     max-width: 1170px;
@@ -814,6 +814,7 @@ Connect
 Skills
 ===============
 */
+
 /*
 ===============
 Timeline

@@ -768,6 +768,12 @@ Connect
   min-width: 22rem;
 }
 
+@media screen and (max-width: 676px) {
+  .connect {
+    justify-content: center;
+  }
+}
+
 /*
 ===============
 Skills

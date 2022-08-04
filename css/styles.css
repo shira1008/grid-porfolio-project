@@ -796,6 +796,26 @@ Connect
   }
 }
 
+@media screen and (max-width: 400px) {
+  .video-text {
+    transform: translateX(-20%);
+  }
+
+  .video-banner .section-title {
+    transform: translateX(-20%);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .video-text {
+    transform: translateX(-40%);
+  }
+
+  .video-banner .section-title {
+    transform: translateX(-40%);
+  }
+}
+
 /*
 ===============
 Skills

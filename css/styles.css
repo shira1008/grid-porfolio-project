@@ -778,6 +778,9 @@ Connect
   .video-banner {
     padding-bottom: 20rem;
     background-color: var(--clr-grey-10);
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
   }
 
   .video-container {
@@ -785,6 +788,10 @@ Connect
   }
 
   .video-text {
+    min-width: 20rem;
+  }
+
+  .video-banner .section-title {
     min-width: 20rem;
   }
 }

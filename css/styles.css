@@ -987,6 +987,31 @@ Blog , in note if i want to rotate the cards
 Footer
 ===============
 */
+
+.footer {
+  padding-bottom: 2rem;
+  background-color: rgb(39, 39, 39);
+  margin-top: 0;
+  padding-top: 1rem;
+  display: grid;
+  place-items: center;
+}
+.footer .social-icons {
+  margin-bottom: 2rem;
+}
+
+.footer .social-icon {
+  color: var(--clr-primary-7);
+}
+
+.footer .social-icon:hover {
+  color: var(--third-clr-2);
+}
+.footer p {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
 /*
 ===============
 Single Page

@@ -742,6 +742,7 @@ Connect
 
 .video-text {
   max-width: 30rem;
+  min-width: 25rem;
 }
 .video-banner {
   background: var(--clr-primary-10);
@@ -771,15 +772,20 @@ Connect
 @media screen and (max-width: 676px) {
   .connect {
     justify-content: center;
+    background-color: var(--clr-white);
   }
 
   .video-banner {
     padding-bottom: 20rem;
-    background-color: var(--clr-white);
+    background-color: var(--clr-grey-10);
   }
 
   .video-container {
     display: none;
+  }
+
+  .video-text {
+    min-width: 20rem;
   }
 }
 

@@ -144,7 +144,6 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -260,6 +259,7 @@ Navbar
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     /* background: grey; */
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
     justify-self: end;
   }
@@ -443,6 +443,7 @@ Hero
 .hero-photo {
   max-width: 25rem;
   max-height: 30rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
@@ -562,6 +563,7 @@ Services
   .services-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
 }
@@ -626,6 +628,7 @@ Projects
   transition: var(--transition);
   border-radius: var(--radius);
   height: 15rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -657,6 +660,7 @@ Projects
   .projects-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
 }
@@ -726,8 +730,19 @@ Connect
   left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   z-index: -2;
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 7%,
+    100% 90%,
+    75% 100%,
+    23% 100%,
+    0 91%,
+    0 8%
+  );
   clip-path: polygon(
     30% 0%,
     70% 0%,
@@ -854,6 +869,13 @@ Timeline
 
 .timeline-item {
   border-top: 2px solid var(--clr-primary-8);
+  -o-border-image: linear-gradient(
+    to right,
+    rgb(106, 217, 236),
+    rgb(105, 130, 237),
+    rgb(151, 138, 216),
+    rgb(222, 74, 230)
+  );
   border-image: linear-gradient(
     to right,
     rgb(106, 217, 236),
@@ -971,6 +993,7 @@ Blog , in note if i want to rotate the cards
 }
 .card-front img {
   height: 13rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
@@ -985,6 +1008,7 @@ Blog , in note if i want to rotate the cards
 .card-footer img {
   width: 2rem;
   height: 2rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -1035,12 +1059,121 @@ Footer
 
 /*
 ===============
-Single Page
+Single Page - about and contact
 ===============
 */
 
+.contactabout-title h2 {
+  font-size: 3.5rem;
+}
+
+.single-page {
+  background: var(--clr-primary-10);
+  padding-bottom: 1rem;
+  min-height: calc(100vh - 5rem - 214px);
+}
+
+.contactabout-title {
+  padding-top: 5rem;
+}
+
+.page-info {
+  max-width: 700px;
+}
+
+.page-info a {
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.page-info a:hover {
+  color: var(--third-clr-1);
+}
+
 /*
 ===============
-Products Page
+Projects Page (h2 container class is also contactabout)
 ===============
 */
+
+.projects-hero {
+  height: 40vh;
+  background: var(--clr-primary-10);
+  display: grid;
+  place-items: center;
+}
+
+/* each card */
+.single-project {
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+
+.single-project:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(102%);
+}
+
+.project-container img {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+/* הקונטיינר של התמונה והאייקון  */
+.project-container {
+  position: relative;
+}
+
+.project-icon {
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-primary-5);
+  border-radius: 50%;
+  color: var(--clr-primary-1);
+  border: 0.375rem solid var(--clr-grey-10);
+  transition: var(--transition);
+}
+
+.project-icon:hover {
+  color: var(--third-clr-1);
+}
+
+/*  מכיל את הכותרת פסקה והקונטיינר של האייקון גיטהאב ומקור קוד*/
+.project-details {
+  padding: 2rem 1.5rem;
+}
+
+/* הקונטיינר של האייקון גיטהאב ומקור קוד */
+.project-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--clr-primary-5);
+}
+
+.project-footer a {
+  color: var(--clr-primary-5);
+  text-transform: capitalize;
+  transition: var(--transition);
+  justify-self: end;
+}
+
+.project-footer a:hover {
+  color: var(--third-clr-1);
+}
+
+/* the container of single project */
+.projects-page-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 3rem 2rem;
+}
